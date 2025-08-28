@@ -1,17 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
+/* Beginning of CSS Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* End of CSS Reset */
+
+/* Beginning of Utility Classes */
+.nowrap {
+  white-space: nowrap;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+/* End of Utility Classes */
+
+img {
+  display: block;
+}
 
 body {
   font-family: "Nunito", sans-serif;
   min-height: 100vh;
+  color: aliceblue;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
 
+.hero {
+  width: 50%;
+  border-bottom: 2px solid #333;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
 
+  background-color: #c5ffaa;
+  background-image: url("../img/pat1.png");
+}
 
+.profile-pic {
+  width: 35%;
+}
 
+.profile-pic img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  border: 4px double #333;
+  outline: 2px solid #524f4f;
+  outline-offset: -30px;
+  border-radius: 50%;
+}
 
+h1 {
+  font-size: 300%;
+}

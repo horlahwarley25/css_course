@@ -4,22 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Media Queries</title>
+    <title>Company Employee Cards</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <header>
-      <h1>Header</h1>
-      <nav><h2>Nav</h2></nav>
+      <h1>Our Staff</h1>
+      <nav class="navbar">
+        <a href="#profile1" class="nav">Joe</a>
+        <a href="#profile2" class="nav">Matt</a>
+        <a href="#profile3" class="nav">Jane</a>
+      </nav>
     </header>
 
     <main>
-      <h2>Main</h2>
+      <article>
+        <figure id="profile1">
+          <img
+            src="img/profile1-500x500.png"
+            alt="Joe's profile picture"
+            width="500"
+            height="500"
+          />
+          <figcaption>
+            <h2>Joe Coder</h2>
+            <p><q>I code stuff.</q></p>
+          </figcaption>
+        </figure>
+        <figure id="profile2">
+          <img
+            src="img/profile2-500x500.png"
+            alt="Matt's profile picture"
+            width="500"
+            height="500"
+          />
+          <figcaption>
+            <h2>Matt Designer</h2>
+            <p><q>I design stuff.</q></p>
+          </figcaption>
+        </figure>
+        <figure id="profile3">
+          <img
+            src="img/profile3-500x500.png"
+            alt="Jane's profile picture"
+            width="500"
+            height="500"
+          />
+          <figcaption>
+            <h2>Jane <span class="nowrap">Dev Rel</span></h2>
+            <p><q>I teach stuff.</q></p>
+          </figcaption>
+        </figure>
+      </article>
     </main>
 
     <footer>
-      <h2>Footer</h2>
+      <p>&copy; ACME Co.</p>
     </footer>
   </body>
 </html>
